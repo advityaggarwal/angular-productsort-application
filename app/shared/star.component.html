@@ -1,0 +1,19 @@
+<div class="crop" 
+    [style.width.px]="starWidth"
+    [title]="rating">
+    <input type="button" (click)="onClick()" value="Click Me"/>
+
+    <div>
+      {{Product.productId}} 
+    </div>
+    <div style="width: 86px">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+    </div>
+    <div>
+        <ai-subStar [price]="Product.price"></ai-subStar>
+    </div>
+</div>
